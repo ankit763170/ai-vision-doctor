@@ -19,7 +19,7 @@ Keep your answer concise (max 2 sentences). No preamble, start your answer right
 
 def process_inputs(audio_filepath, image_filepath):
     # Get API Key
-    groq_api_key = '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'
+    groq_api_key = os.getenv('GROQ_API_KEY')
 
     
     if not groq_api_key:
